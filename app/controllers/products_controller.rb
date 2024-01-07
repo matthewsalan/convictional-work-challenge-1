@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.includes(variants: :images).find(product_params[:id])
+  rescue ActiveRecord::RecordNotFound => e
+    render json: { message: e.message }, status: :unprocessable_entity
   end
 
   def create

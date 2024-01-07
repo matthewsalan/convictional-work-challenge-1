@@ -8,7 +8,7 @@ json.array! @products do |product|
     json.title variant.title
     json.sku variant.sku
     json.available variant.available || false
-    json.inventory_units variant.inventory_quantity || 0
+    json.inventory_quantity variant.inventory_quantity || 0
     json.weights do
       json.value variant.weight
       json.unit variant.weight_unit
