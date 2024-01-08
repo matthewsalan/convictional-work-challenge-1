@@ -17,3 +17,6 @@ I attempted to map the request body params to the API spec. Fields not listed in
 that I thought were a part of the API spec, like image `src`, were aliased to match the db schema/API spec and stored.  Some fields, `code` for example, are listed
 in the API spec but no corresponding field matched in the example [json file](https://my-json-server.typicode.com/convictional/engineering-interview-api/products),
 so I aliased the product id to it so that field woudln't be an empty string in the response body.
+## Possible Future Refactors
+For this exercise, I have some code that handles the POST request body params in the controller itself, but it could be refactored to be more robust to account for various vendors and
+their data models.  I did a similar thing for the HubSpot integration I built, [LeadJar](https://leadjar.app/), where I have different services to handle requests from HubSpot, Stripe, Google, etc. 
