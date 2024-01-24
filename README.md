@@ -1,5 +1,5 @@
 # README
-
+Code challenge requirements: https://github.com/convictional/engineering-interview
 ## Install
 **Docker**
  * I created the image on my local Linux/Ubuntu machine, but I believe it should work on MacOS as well
